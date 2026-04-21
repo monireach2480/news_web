@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Tech Training News</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest technology news covering AI, cybersecurity, and web development trends">
+    <title>Tech Trending News</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-    <h1>Tech Training News</h1>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="ai.html">AI</a> |
-        <a href="cybersecurity.html">Cybersecurity</a> |
-        <a href="about.html">About</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
+<header class="site-header">
+    <div class="container">
+        <h1 class="site-title">Tech Training News</h1>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="ai.html" class="nav-link">AI</a></li>
+                <li><a href="cybersecurity.html" class="nav-link">Cybersecurity</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <hr>
 
 <main>
 
-<!-- HERO SECTION -->
 <section>
     <h2>Latest Technology News</h2>
 
@@ -71,37 +78,46 @@
 
     <article>
         <h3>Cybersecurity stocks drop for a second day as new Anthropic tool fuels AI disruption fears</h3>
+        <img src="images/cyber_stock.jpg" alt="cyber">
         <p>
-        Cybersecurity stocks fell for a second straight day as investors worried that new AI security tools could disrupt traditional cybersecurity companies.
-
-        The concern started after Anthropic introduced a new AI feature for its Claude model that can scan code for vulnerabilities and suggest fixes.
-
-        Major cybersecurity firms like CrowdStrike and Zscaler dropped around 10%, while others like Netskope, Tenable, Okta, and Palo Alto Networks also saw significant losses. Cybersecurity ETFs dropped as well.
-
-        Despite the panic, CrowdStrike CEO George Kurtz argued that AI tools alone can’t replace full security platforms, saying real cybersecurity still needs proven systems to stop attacks.
+            Cybersecurity stocks fell for a second straight day as investors worried that new AI security tools could disrupt traditional cybersecurity companies.
+            The concern started after Anthropic introduced a new AI feature for its Claude model that can scan code for vulnerabilities and suggest fixes.
+            Major cybersecurity firms like CrowdStrike and Zscaler dropped around 10%, while others like Netskope, Tenable, Okta, and Palo Alto Networks also saw significant losses. Cybersecurity ETFs dropped as well.
+            Despite the panic, CrowdStrike CEO George Kurtz argued that AI tools alone can’t replace full security platforms, saying real cybersecurity still needs proven systems to stop attacks.
         <a href="http://cnbc.com/2026/02/23/cybersecurity-stocks-anthropic-ai-crowdstrike.html">Read More</a>
         </p>
     </article>
 
     <article>
         <h3>AI’s next bottleneck: Why even the best chips made in the U.S. take a round trip to Taiwan</h3>
-        <p>Advanced chip packaging is becoming a major bottleneck for AI hardware. Almost all of this process currently happens in Asia, and demand is surging as AI chips grow more complex.
-
+        
+        <p> 
+            Advanced chip packaging is becoming a major bottleneck for AI hardware. Almost all of this process currently happens in Asia, and demand is surging as AI chips grow more complex.
             TSMC leads with its CoWoS technology, growing at 80% per year, and most of the capacity is reserved by Nvidia. Intel also competes with its EMIB packaging and serves customers like Amazon, Cisco, and now Elon Musk’s Terafab projects.
-
             Advanced packaging connects multiple chip components like logic and memory, boosting performance for GPUs and AI chips. Future methods like 3D packaging (TSMC’s SoIC, Intel’s Foveros Direct) and hybrid bonding promise even better efficiency.
-
             Building U.S.-based packaging plants aims to cut turnaround times and reduce reliance on Asia, as advanced packaging becomes as important as the chips themselves. 
-<a href="https://www.cnbc.com/2026/04/08/tsmc-nvidia-advanced-packaging-intel.html">Read More</a>
+        <a href="https://www.cnbc.com/2026/04/08/tsmc-nvidia-advanced-packaging-intel.html">Read More</a>
         </p>
     </article>
 
     <article>
-        <h3>New Trends in Web Development</h3>
+        <h3>Vercel Breach Tied to Context AI Hack Exposes Limited Customer Credentials</h3>
+        <img src="images/vercel.jpg" width="" alt="cyber">
         <p>
-        Modern web development focuses on performance and user experience.
-        Frameworks like React and Vue are widely used to build fast and interactive websites.
+            Vercel reported a security breach caused by the compromise of Context.ai, a third-party AI tool used by an employee. Attackers gained access through a compromised OAuth token, allowing them to take over the employee’s Google Workspace account and access parts of Vercel’s systems, including some non-sensitive environment variables. Sensitive data remained protected due to encryption, and only a limited number of customers were affected, though some credentials were exposed.
+            The attacker is considered highly skilled, and investigations are ongoing with cybersecurity firms. The breach may have started from malware (Lumma Stealer) infecting a Context.ai employee. Vercel and Context.ai have both implemented security improvements and advised users to enable multi-factor authentication, review activity, and rotate credentials. This incident highlights growing risks from OAuth tokens and third-party integrations in modern supply chains.
+            <a href="https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html">Read More</a>
         </p>
+    </article>
+    <article>
+        <h3>Tim finds the new Apple of his eye</h3>
+        <img src="images/john_apple.jpg" alt="others">
+        <p>
+            Apple announced a major leadership transition, with Tim Cook stepping down as CEO on September 1 and becoming executive chairman, while John Ternus will take over as CEO. Ternus inherits a company that grew over 20 times in market value under Cook’s leadership. Meanwhile, global markets showed mixed performance, with U.S. stocks declining and Asia uneven, though South Korea’s Kospi reached a record high. Rising geopolitical tensions between the U.S. and Iran continue to impact sentiment, as Donald Trump warned of military action if no agreement is reached. Despite this, there are signs of diplomacy, with U.S. officials planning talks in Pakistan. Oil prices fell amid uncertainty, and the U.S. also introduced a tariff refund system after a Supreme Court decision.
+            <a href="https://www.cnbc.com/2026/04/21/apple-new-ceo-john-ternus-tim-cook-trump-iran.html">Read More</a>
+        </p>
+        
+
     </article>
 
 </section>
