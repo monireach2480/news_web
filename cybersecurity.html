@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cybersecurity news and updates from Tech Trending News">
     <title>Cybersecurity - Tech Trending News</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -25,17 +26,54 @@
 
 <main>
     <div class="container">
-        <section>
+        <section class="intro-section">
             <h2>Cybersecurity News</h2>
             <p>Track the latest security threats, vulnerabilities, and best practices to protect your digital assets.</p>
         </section>
 
         <hr>
 
+        <!-- FEATURED SECTION -->
+        <section class="featured-section">
+            <h3>Featured Story</h3>
+            <article class="featured-article">
+                <h3>Vercel Breach Tied to Context AI Hack Exposes Limited Customer Credentials</h3>
+                <img src="images/vercel.jpg" alt="cyber">
+                <div class="article-meta">
+                    <span class="date">April 20, 2026</span>
+                    <span class="author">Tech News Team</span>
+                    <span class="reading-time">6 min read</span>
+                </div>
+                <div class="article-tags">
+                    <span class="tag tag-breaches">Breaches</span>
+                    <span class="tag tag-threats">Threats</span>
+                </div>
+                <p>
+                    Vercel reported a security breach caused by the compromise of Context.ai, a third-party AI tool used by an employee. Attackers gained access through a compromised OAuth token, allowing them to take over the employee's Google Workspace account and access parts of Vercel's systems, including some non-sensitive environment variables. Sensitive data remained protected due to encryption, and only a limited number of customers were affected, though some credentials were exposed.
+                    The attacker is considered highly skilled, and investigations are ongoing with cybersecurity firms. The breach may have started from malware (Lumma Stealer) infecting a Context.ai employee. Vercel and Context.ai have both implemented security improvements and advised users to enable multi-factor authentication, review activity, and rotate credentials. This incident highlights growing risks from OAuth tokens and third-party integrations in modern supply chains.
+                    <a href="https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html">Read More</a>
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- MAIN ARTICLES -->
         <section>
+            <h2>Latest Cybersecurity News</h2>
+
             <article>
                 <h3>CISA Adds One Known Exploited Vulnerability to Catalog</h3>
                 <img src="images/cisa.jpg" alt="cyber">
+                <div class="article-meta">
+                    <span class="date">April 18, 2026</span>
+                    <span class="author">Tech News Team</span>
+                    <span class="reading-time">5 min read</span>
+                </div>
+                <div class="article-tags">
+                    <span class="tag tag-vulnerabilities">Vulnerabilities</span>
+                    <span class="tag tag-compliance">Compliance</span>
+                </div>
                 <p>
                 CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.
                 CVE-2026-35616 - Fortinet FortiClient EMS Improper Access Control Vulnerability
@@ -49,6 +87,15 @@
             <article>
                 <h3>TfL hack in 2024 affected around 10 million people, BBC can reveal</h3>
                 <img src="images/2024_hack_bbc.jpg" alt="cyber">
+                <div class="article-meta">
+                    <span class="date">April 15, 2026</span>
+                    <span class="author">Tech News Team</span>
+                    <span class="reading-time">5 min read</span>
+                </div>
+                <div class="article-tags">
+                    <span class="tag tag-breaches">Breaches</span>
+                    <span class="tag tag-threats">Threats</span>
+                </div>
                 <p>
                 A massive cyberattack on Transport for London (TfL) in 2024 exposed the personal data of about 10 million people, making it one of the biggest hacks in UK history. Initially, TfL said only "some" users were affected, but it later confirmed the full scale.
 
@@ -62,6 +109,15 @@
             <article>
                 <h3>Misuse of information and communications technologies</h3>
                 <img src="images/misuse.png" alt="cyber">
+                <div class="article-meta">
+                    <span class="date">April 12, 2026</span>
+                    <span class="author">Tech News Team</span>
+                    <span class="reading-time">6 min read</span>
+                </div>
+                <div class="article-tags">
+                    <span class="tag tag-threats">Threats</span>
+                    <span class="tag tag-best-practices">Best Practices</span>
+                </div>
                 <p>
                 There is growing concern over the misuse of information and communications technologies (ICT) by terrorists, in particular the Internet and new digital technologies, to commit, incite, recruit, fund or plan terrorist acts.
 
@@ -74,6 +130,15 @@
             <article>
                 <h3>Cybersecurity stocks drop for a second day as new Anthropic tool fuels AI disruption fears</h3>
                 <img src="images/cyber_stock.jpg" alt="cyber">
+                <div class="article-meta">
+                    <span class="date">April 10, 2026</span>
+                    <span class="author">Tech News Team</span>
+                    <span class="reading-time">5 min read</span>
+                </div>
+                <div class="article-tags">
+                    <span class="tag tag-vulnerabilities">Vulnerabilities</span>
+                    <span class="tag tag-best-practices">Best Practices</span>
+                </div>
                 <p>
                     Cybersecurity stocks fell for a second straight day as investors worried that new AI security tools could disrupt traditional cybersecurity companies.
                     The concern started after Anthropic introduced a new AI feature for its Claude model that can scan code for vulnerabilities and suggest fixes.
@@ -82,16 +147,27 @@
                 <a href="http://cnbc.com/2026/02/23/cybersecurity-stocks-anthropic-ai-crowdstrike.html">Read More</a>
                 </p>
             </article>
+        </section>
 
-            <article>
-                <h3>Vercel Breach Tied to Context AI Hack Exposes Limited Customer Credentials</h3>
-                <img src="images/vercel.jpg" alt="cyber">
-                <p>
-                    Vercel reported a security breach caused by the compromise of Context.ai, a third-party AI tool used by an employee. Attackers gained access through a compromised OAuth token, allowing them to take over the employee's Google Workspace account and access parts of Vercel's systems, including some non-sensitive environment variables. Sensitive data remained protected due to encryption, and only a limited number of customers were affected, though some credentials were exposed.
-                    The attacker is considered highly skilled, and investigations are ongoing with cybersecurity firms. The breach may have started from malware (Lumma Stealer) infecting a Context.ai employee. Vercel and Context.ai have both implemented security improvements and advised users to enable multi-factor authentication, review activity, and rotate credentials. This incident highlights growing risks from OAuth tokens and third-party integrations in modern supply chains.
-                    <a href="https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html">Read More</a>
-                </p>
-            </article>
+        <hr>
+
+        <!-- RELATED ARTICLES SIDEBAR -->
+        <section class="related-articles-section">
+            <h3>Related Topics</h3>
+            <div class="related-articles">
+                <article class="related-article">
+                    <h4><a href="#cyber-article-1">Vulnerability Management & Remediation</a></h4>
+                    <p class="related-tags"><span class="tag tag-vulnerabilities">Vulnerabilities</span></p>
+                </article>
+                <article class="related-article">
+                    <h4><a href="#cyber-article-2">Major Data Breaches & Response</a></h4>
+                    <p class="related-tags"><span class="tag tag-breaches">Breaches</span></p>
+                </article>
+                <article class="related-article">
+                    <h4><a href="#cyber-article-3">Security Best Practices & Compliance</a></h4>
+                    <p class="related-tags"><span class="tag tag-best-practices">Best Practices</span></p>
+                </article>
+            </div>
         </section>
     </div>
 </main>
@@ -100,5 +176,7 @@
     <p>&copy; 2026 Tech Trending News. All rights reserved.</p>
 </footer>
 
+
+<script src="js/script.js"></script>
 </body>
 </html>
