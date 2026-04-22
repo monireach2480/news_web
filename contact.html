@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get in touch with Tech Trending News - contact form and information">
     <title>Contact - Tech Trending News</title>
-</head>
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -27,16 +26,36 @@
 
 <main>
     <div class="container">
-        <section>
+        <section class="intro-section">
             <h2>Get In Touch</h2>
+            <p>We'd love to hear from you! Whether you have feedback about our content, want to suggest a story, inquire about partnerships, or just want to say hello, please don't hesitate to reach out. We're here to help.</p>
+        </section>
 
-            <article>
+        <hr>
+
+        <!-- FEATURED SECTION -->
+        <section class="featured-section">
+            <h3>Quick Contact Info</h3>
+            <article class="featured-article">
+                <h3>Reach Out to Us</h3>
+                <div class="article-meta">
+                    <span class="author">Tech News Team</span>
+                </div>
                 <p>
-                We'd love to hear from you! Whether you have feedback about our content, want to suggest a story, inquire about partnerships, or just want to say hello, please don't hesitate to reach out. Fill out the form below or use the contact information provided.
+                We typically respond to all inquiries within 24 hours during business days. Choose your preferred method of contact below or use the contact form to send us a message directly. Whatever you need, we're ready to help.
                 </p>
+                <div class="article-tags">
+                    <span class="tag tag-best-practices">Support</span>
+                    <span class="tag tag-innovation">Feedback</span>
+                    <span class="tag tag-applications">Partnership</span>
+                </div>
             </article>
+        </section>
 
-            <div class="contact-container">
+        <hr>
+
+        <section>
+            <h2>Contact Options</h2>
                 <div class="contact-form">
                     <h3>Send us a Message</h3>
                     <form id="contactForm" name="contactForm">
@@ -173,6 +192,24 @@
 
         <hr>
 
+        <!-- RELATED ARTICLES SIDEBAR -->
+        <section class="related-articles-section">
+            <h3>Explore More</h3>
+            <div class="related-articles">
+                <article class="related-article">
+                    <h4><a href="about.html">About Us</a></h4>
+                    <p class="related-tags"><span class="tag tag-best-practices">Learn</span></p>
+                </article>
+                <article class="related-article">
+                    <h4><a href="ai.html">AI News</a></h4>
+                    <p class="related-tags"><span class="tag tag-innovation">Innovation</span></p>
+                </article>
+                <article class="related-article">
+                    <h4><a href="cybersecurity.html">Cybersecurity</a></h4>
+                    <p class="related-tags"><span class="tag tag-vulnerabilities">Security</span></p>
+                </article>
+            </div>
+        </section>
     </div>
 </main>
 
@@ -180,5 +217,6 @@
     <p>&copy; 2026 Tech Trending News. All rights reserved.</p>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
