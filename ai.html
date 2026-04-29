@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Artificial Intelligence news and updates from Tech Trending News">
-    <title>AI - Tech Trending News</title>
+    <title>AI News - Tech Trending News</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,9 +18,14 @@
                 <li><a href="ai.html" class="nav-link active">AI</a></li>
                 <li><a href="cybersecurity.html" class="nav-link">Cybersecurity</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li></li>
+                
             </ul>
         </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search AI news...">
+            <button id="searchBtn">Search</button>
+        </div>
     </div>
 </header>
 
@@ -33,7 +38,6 @@
 
         <hr>
 
-   
         <section class="featured-section">
             <div class="dashboard-header">
                 <h3>Featured Stories</h3>
@@ -42,7 +46,7 @@
             <div class="dashboard-grid">
                 <article class="featured-article">
                     <h3>A faster way to estimate AI power consumption</h3>
-                    <img src="images/mit.jpg" alt="ai">
+                    <img src="images/mit.jpg" alt="AI chip">
                     <div class="article-meta">
                         <span class="date">April 27, 2026</span>
                         <span class="author">MIT News</span>
@@ -52,87 +56,45 @@
                         <span class="tag tag-innovation">Innovation</span>
                         <span class="tag tag-ml">Machine Learning</span>
                     </div>
-                    <p>AI is growing fast and may use 12% of U.S. electricity by 2028, so researchers created EnergAIzer, a tool that quickly predicts how much power AI tasks will consume.
-                    It gives fast and accurate estimates (within ~8% error) in seconds instead of days, helping data centers and developers reduce energy use and make AI more sustainable.
-                    <a href="https://news.mit.edu/2026/faster-way-to-estimate-ai-power-consumption-0427">Read More</a>
-                    </p>
+                    <p>Researchers created EnergAIzer, a tool that quickly predicts AI power consumption with ~8% error, helping data centers reduce energy use. <a href="https://news.mit.edu/2026/faster-way-to-estimate-ai-power-consumption-0427">Read More →</a></p>
                 </article>
 
                 <div class="article-panel">
                     <div class="article-grid">
                         <article class="article-card">
-                            <img src="images/ai-news.jpg" alt="ai">
-                            <h3>NVIDIA and Google infrastructure cuts AI inference costs</h3>
-                            <div class="article-content">
-                                <div class="article-meta">
-                                    <span class="date">April 23, 2026</span>
-                                    <span class="author">Ryan Daws</span>
-                                    <span class="reading-time">7 min read</span>
-                                </div>
-                                <div class="article-tags">
-                                    <span class="tag tag-research">Research</span>
-                                    <span class="tag tag-applications">Applications</span>
-                                </div>
-                                <p>Google Cloud and NVIDIA announced a new AI infrastructure roadmap focused on making large-scale AI faster, cheaper, and more efficient. Their A5X instances, powered by NVIDIA Vera Rubin systems, aim to cut AI inference costs by up to 10x and improve performance per megawatt by the same amount.
-                                <a href="https://www.artificialintelligence-news.com/news/nvidia-and-google-infrastructure-cuts-ai-inference-costs/">Read More</a>
-                                </p>
+                            <img src="images/ai-news.jpg" alt="NVIDIA Google">
+                            <div class="card-content">
+                                <h3>NVIDIA & Google cut AI inference costs by 10x</h3>
+                                <div class="article-meta"><span class="date">April 23, 2026</span><span class="author">Ryan Daws</span></div>
+                                <div class="article-tags"><span class="tag tag-research">Research</span><span class="tag tag-applications">Applications</span></div>
+                                <p>New A5X instances improve performance per megawatt dramatically. <a href="https://www.artificialintelligence-news.com/news/nvidia-and-google-infrastructure-cuts-ai-inference-costs/">Read More →</a></p>
                             </div>
                         </article>
-
                         <article class="article-card">
-                            <img src="images/ai-article-3.jpg" alt="ai">
-                            <h3>EU Passes AI Governance Act: New Regulations Take Effect April 2026</h3>
-                            <div class="article-content">
-                                <div class="article-meta">
-                                    <span class="date">April 12, 2026</span>
-                                    <span class="author">Tech News Team</span>
-                                    <span class="reading-time">8 min read</span>
-                                </div>
-                                <div class="article-tags">
-                                    <span class="tag tag-ethics">Ethics</span>
-                                    <span class="tag tag-compliance">Compliance</span>
-                                </div>
-                                <p>The European Union's comprehensive AI Governance Act has officially taken effect this month, establishing strict requirements for high-risk AI systems. The regulations mandate transparency, accountability, and bias testing for AI systems used in critical sectors including healthcare, criminal justice, and employment.
-                                <a href="https://www.reuters.com/technology/ai-governance-act-2026">Read More</a>
-                                </p>
+                            <img src="images/ai-article-3.jpg" alt="EU AI act">
+                            <div class="card-content">
+                                <h3>EU Passes AI Governance Act</h3>
+                                <div class="article-meta"><span class="date">April 12, 2026</span><span class="author">Tech News Team</span></div>
+                                <div class="article-tags"><span class="tag tag-ethics">Ethics</span><span class="tag tag-compliance">Compliance</span></div>
+                                <p>Strict requirements for high-risk AI systems now in effect. <a href="https://www.reuters.com/technology/ai-governance-act-2026">Read More →</a></p>
                             </div>
                         </article>
-
                         <article class="article-card">
-                            <img src="images/ai-article-4.jpg" alt="ai">
-                            <h3>OpenAI now lets teams make custom bots that can do work on their own</h3>
-                            <div class="article-content">
-                                <div class="article-meta">
-                                    <span class="date">April 9, 2026</span>
-                                    <span class="author">Tech News Team</span>
-                                    <span class="reading-time">5 min read</span>
-                                </div>
-                                <div class="article-tags">
-                                    <span class="tag tag-applications">Applications</span>
-                                    <span class="tag tag-innovation">Innovation</span>
-                                </div>
-                                <p>OpenAI introduced workspace agents, which are AI bots teams can create to automatically handle tasks like writing emails, gathering data, and managing workflows. These agents can run independently, connect to tools, and be shared across teams.
-                                <a href="https://www.theverge.com/ai-artificial-intelligence/917065/openai-chatgpt-workspace-agents-custom-teams-bots">Read More</a>
-                                </p>
+                            <img src="images/ai-article-4.jpg" alt="OpenAI agents">
+                            <div class="card-content">
+                                <h3>OpenAI launches custom workspace agents</h3>
+                                <div class="article-meta"><span class="date">April 9, 2026</span><span class="author">Tech News Team</span></div>
+                                <div class="article-tags"><span class="tag tag-applications">Applications</span><span class="tag tag-innovation">Innovation</span></div>
+                                <p>Teams can now create AI bots that handle emails, data workflows autonomously. <a href="https://www.theverge.com/ai-artificial-intelligence/917065/openai-chatgpt-workspace-agents-custom-teams-bots">Read More →</a></p>
                             </div>
                         </article>
-
                         <article class="article-card">
-                            <img src="images/ai-article-5.jpg" alt="ai">
-                            <h3>AI Ethics Research Shows Models Can Adopt Harmful Biases from Training Data</h3>
-                            <div class="article-content">
-                                <div class="article-meta">
-                                    <span class="date">April 5, 2026</span>
-                                    <span class="author">Tech News Team</span>
-                                    <span class="reading-time">6 min read</span>
-                                </div>
-                                <div class="article-tags">
-                                    <span class="tag tag-ethics">Ethics</span>
-                                    <span class="tag tag-research">Research</span>
-                                </div>
-                                <p>A comprehensive study from MIT and Stanford researchers reveals concerning findings about bias propagation in large language models. The research demonstrates that AI systems can learn and amplify harmful stereotypes present in training datasets.
-                                <a href="https://www.mit.edu/news/ai-bias-research-2026">Read More</a>
-                                </p>
+                            <img src="images/ai-article-5.jpg" alt="AI ethics">
+                            <div class="card-content">
+                                <h3>Study: AI Models Adopt Harmful Biases</h3>
+                                <div class="article-meta"><span class="date">April 5, 2026</span><span class="author">MIT/Stanford</span></div>
+                                <div class="article-tags"><span class="tag tag-ethics">Ethics</span><span class="tag tag-research">Research</span></div>
+                                <p>LLMs can amplify stereotypes present in training data. <a href="https://www.mit.edu/news/ai-bias-research-2026">Read More →</a></p>
                             </div>
                         </article>
                     </div>
@@ -142,32 +104,23 @@
 
         <hr>
 
-        <!-- RELATED ARTICLES SIDEBAR -->
         <section class="related-articles-section">
             <h3>Related Topics</h3>
             <div class="related-articles">
-                <article class="related-article">
-                    <h4><a href="#ai-article-2">Protein Prediction & Biotech AI</a></h4>
-                    <p class="related-tags"><span class="tag tag-applications">Applications</span></p>
-                </article>
-                <article class="related-article">
-                    <h4><a href="#ai-article-1">Enterprise AI Adoption Trends</a></h4>
-                    <p class="related-tags"><span class="tag tag-innovation">Innovation</span></p>
-                </article>
-                <article class="related-article">
-                    <h4><a href="#ai-article-3">AI Regulation & Compliance</a></h4>
-                    <p class="related-tags"><span class="tag tag-ethics">Ethics</span></p>
-                </article>
+                <div class="related-article"><h4><a href="#">Protein Prediction & Biotech AI</a></h4><span class="tag tag-applications">Applications</span></div>
+                <div class="related-article"><h4><a href="#">Enterprise AI Adoption Trends</a></h4><span class="tag tag-innovation">Innovation</span></div>
+                <div class="related-article"><h4><a href="#">AI Regulation & Compliance</a></h4><span class="tag tag-ethics">Ethics</span></div>
             </div>
         </section>
     </div>
 </main>
 
 <footer>
-    <p>&copy; 2026 Tech Trending News. All rights reserved.</p>
+    <div class="container">
+        <div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+        <p>&copy; <span id="current-year"></span> Tech Trending News. All rights reserved.</p>
+    </div>
 </footer>
-
-
 <script src="js/script.js"></script>
 </body>
 </html>
