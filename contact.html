@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Tech Trending News - contact form and information">
+    <meta name="description" content="Contact Tech Trending News">
     <title>Contact - Tech Trending News</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,6 +21,10 @@
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
         </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchBtn">Search</button>
+        </div>
     </div>
 </header>
 
@@ -28,195 +32,45 @@
     <div class="container">
         <section class="intro-section">
             <h2>Get In Touch</h2>
-            <p>We'd love to hear from you! Whether you have feedback about our content, want to suggest a story, inquire about partnerships, or just want to say hello, please don't hesitate to reach out. We're here to help.</p>
+            <p>Feedback, story suggestions, partnerships — we'd love to hear from you.</p>
         </section>
 
         <hr>
 
-        <!-- FEATURED SECTION -->
-        <section class="featured-section">
-            <h3>Quick Contact Info</h3>
-            <article class="featured-article">
-                <h3>Reach Out to Us</h3>
-                <div class="article-meta">
-                    <span class="author">Tech News Team</span>
-                </div>
-                <p>
-                We typically respond to all inquiries within 24 hours during business days. Choose your preferred method of contact below or use the contact form to send us a message directly. Whatever you need, we're ready to help.
-                </p>
-                <div class="article-tags">
-                    <span class="tag tag-best-practices">Support</span>
-                    <span class="tag tag-innovation">Feedback</span>
-                    <span class="tag tag-applications">Partnership</span>
-                </div>
-            </article>
-        </section>
-
-        <hr>
-
-        <section>
-            <h2>Contact Options</h2>
-                <div class="contact-form">
-                    <h3>Send us a Message</h3>
-                    <form id="contactForm" name="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Your Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="feedback">Feedback</option>
-                                <option value="story-suggestion">Story Suggestion</option>
-                                <option value="partnership">Partnership Inquiry</option>
-                                <option value="advertising">Advertising</option>
-                                <option value="technical-issue">Technical Issue</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-
-                    <div class="info-item">
-                        <h4>Email</h4>
-                        <p>
-                            <a href="mailto:info@techtrainingnews.com">info@techtrainingnews.com</a>
-                        </p>
-                        <p>For press inquiries: <a href="mailto:press@techtrainingnews.com">press@techtrainingnews.com</a></p>
-                    </div>
-
-                    <div class="info-item">
-                        <h4>Office</h4>
-                        <p>
-                            Tech Trending News<br>
-                            Innovation Hub, Tech Street<br>
-                            San Francisco, CA 94105<br>
-                            United States
-                        </p>
-                    </div>
-
-                    <div class="info-item">
-                        <h4>Phone</h4>
-                        <p>
-                            <a href="tel:+1-555-123-4567">+1 (555) 123-4567</a>
-                        </p>
-                    </div>
-
-                    <div class="info-item">
-                        <h4>Business Hours</h4>
-                        <p>
-                            Monday - Friday: 9:00 AM - 6:00 PM (PST)<br>
-                            Saturday: 10:00 AM - 4:00 PM (PST)<br>
-                            Sunday: Closed
-                        </p>
-                    </div>
-
-                    <div class="info-item">
-                        <h4>Follow Us</h4>
-                        <div class="social-links">
-                            <a href="https://twitter.com" title="Twitter">𝕏</a>
-                            <a href="https://linkedin.com" title="LinkedIn">in</a>
-                            <a href="https://facebook.com" title="Facebook">f</a>
-                            <a href="https://youtube.com" title="YouTube">▶</a>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <h4>Response Time</h4>
-                        <p>
-                            We typically respond to all inquiries within 24 hours during business days. Thank you for reaching out!
-                        </p>
-                    </div>
-                </div>
+        <div style="display: grid; gap: 2rem; grid-template-columns: 1fr 1fr;">
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group"><label for="name">Your Name *</label><input type="text" id="name" required></div>
+                    <div class="form-group"><label for="email">Your Email *</label><input type="email" id="email" required></div>
+                    <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone"></div>
+                    <div class="form-group"><label for="subject">Subject *</label><select id="subject" required><option value="">Select</option><option>Feedback</option><option>Story Suggestion</option><option>Partnership</option><option>Advertising</option><option>Technical Issue</option><option>Other</option></select></div>
+                    <div class="form-group"><label for="message">Message *</label><textarea id="message" required></textarea></div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
-
-            <hr>
-
-            <article>
-                <h3>Frequently Asked Questions</h3>
-
-                <h4>How often do you publish new content?</h4>
-                <p>
-                We publish new articles and updates daily, covering the latest developments in technology, cybersecurity, AI, and web development.
-                </p>
-
-                <h4>Can I submit a story idea?</h4>
-                <p>
-                Absolutely! We welcome story suggestions from our readers. Use the contact form above to send us your ideas, and our editorial team will review them.
-                </p>
-
-                <h4>Is your content available in other languages?</h4>
-                <p>
-                Currently, our content is primarily in English. However, we're exploring options to expand to other languages in the future.
-                </p>
-
-                <h4>Do you offer newsletter subscriptions?</h4>
-                <p>
-                Yes! You can subscribe to our newsletter to get the latest news delivered directly to your inbox. Contact us for more information.
-                </p>
-
-                <h4>How can I advertise with Tech Trending News?</h4>
-                <p>
-                We offer various advertising opportunities. Please send an inquiry using the contact form with "Advertising" as the subject, and our team will get back to you with detailed information.
-                </p>
-
-                <h4>Do you accept guest contributions?</h4>
-                <p>
-                We occasionally accept guest articles from industry experts. If you're interested in contributing, please reach out with your proposal.
-                </p>
-            </article>
-
-        </section>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item"><h4>Email</h4><p><a href="mailto:info@techtrainingnews.com">info@techtrainingnews.com</a><br>Press: <a href="mailto:press@techtrainingnews.com">press@techtrainingnews.com</a></p></div>
+                <div class="info-item"><h4>Office</h4><p>Innovation Hub, Tech Street<br>San Francisco, CA 94105</p></div>
+                <div class="info-item"><h4>Phone</h4><p><a href="tel:+1-555-123-4567">+1 (555) 123-4567</a></p></div>
+                <div class="info-item"><h4>Business Hours</h4><p>Mon-Fri: 9AM–6PM PST<br>Sat: 10AM–4PM PST</p></div>
+                <div class="info-item"><h4>Follow Us</h4><div class="social-links"><a href="#">𝕏</a><a href="#">in</a><a href="#">f</a><a href="#">▶</a></div></div>
+            </div>
+        </div>
 
         <hr>
 
-        <!-- RELATED ARTICLES SIDEBAR -->
-        <section class="related-articles-section">
-            <h3>Explore More</h3>
-            <div class="related-articles">
-                <article class="related-article">
-                    <h4><a href="about.html">About Us</a></h4>
-                    <p class="related-tags"><span class="tag tag-best-practices">Learn</span></p>
-                </article>
-                <article class="related-article">
-                    <h4><a href="ai.html">AI News</a></h4>
-                    <p class="related-tags"><span class="tag tag-innovation">Innovation</span></p>
-                </article>
-                <article class="related-article">
-                    <h4><a href="cybersecurity.html">Cybersecurity</a></h4>
-                    <p class="related-tags"><span class="tag tag-vulnerabilities">Security</span></p>
-                </article>
-            </div>
-        </section>
+        <section><h3>Frequently Asked Questions</h3><article><h4>How often do you publish?</h4><p>Daily updates.</p><h4>Can I submit a story idea?</h4><p>Yes! Use the form above.</p><h4>Do you have a newsletter?</h4><p>Contact us to subscribe.</p></article></section>
     </div>
 </main>
 
 <footer>
-    <p>&copy; 2026 Tech Trending News. All rights reserved.</p>
+    <div class="container">
+        <div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+        <p>&copy; <span id="current-year"></span> Tech Trending News. All rights reserved.</p>
+    </div>
 </footer>
-
 <script src="js/script.js"></script>
 </body>
 </html>
